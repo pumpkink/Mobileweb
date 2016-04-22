@@ -1,0 +1,55 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui">
+
+    <f:view contentType="text/html">
+        <h:head>
+            <title>FAQ</title>
+            <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        </h:head>
+
+        <h:body>
+            <h:form id="form">           
+              <p:growl id="msgs" showDetail="true" />
+ 
+               <h3 style="margin-top:0">What is MOBILE?</h3>
+                <p:accordionPanel>
+                  <p:tab title="MOBILE Part I">
+                   <h:panelGrid columns="2" cellpadding="10">
+                     <p:graphicImage name="demo/images/mobile/mobile1.jpg" />
+                     <h:outputText value="Im Projekt MOBILE wird am Institut für Regelungstechnik in Kooperation mit dem Institut für Konstruktionstechnik der TU Braunschweig das in Abbildung 1 dargestellte vollelektrische und flexible Versuchsfahrzeug aufgebaut. Das Ziel des Fahrzeugs ist die Schaffung einer leistungsfähigen Versuchsplattform zur Erprobung elektronischer Fahrzeugsysteme und fahrdynamischer Regelsysteme sowie die Ausbildung von Studenten im Bereich Elektromobilität. Dabei bauen die Arbeiten auf den Erfahrungen mit X1 auf. Gleichzeitig werden zusätzliche Freiheitsgrade insbesondere im Antriebssystem und Innenraum des Fahrzeugs ergänzt."/>
+                   </h:panelGrid>
+                  </p:tab>
+                 <p:tab title="MOBILE Part II">
+                   <h:panelGrid columns="2" cellpadding="10">
+                     <p:graphicImage name="demo/images/mobile/mobile2.jpg" />
+                     <h:outputText value="Das Fahrzeug verfügt an allen vier Rädern über elektrischen Einzelradantrieb und elektrische Einzelradlenkung sowie elektrische Bremsen. Das bereits 2009 entwickelte Achskonzept mit jeweils zwei Antriebsmotoren der Firma BRUSA (jeweils Spitzenleistung 108kW bei 400V) sowie den beiden stehenden bürstenlosen Motoren mit Getriebe zur Einzelradlenkung ist in Bild 3 dargestellt. Das elektrische Bremssystem wird von der Firma VE Vienna Engineering zugeliefert und steht seit September 2012 für Tests am Prüfstand zur Verfügung. " />
+                   </h:panelGrid>
+                </p:tab>
+                <p:tab title="MOBILE Part III">
+                   <h:panelGrid columns="2" cellpadding="10">
+                     <p:graphicImage name="demo/images/mobile/mobile3.png" />
+                     <h:outputText value="
+    Die Komponenten des Antriebssystems sind für jedes Rad identisch aufgebaut und ansteuerbar. Dies stellt größtmögliche Freiheitsgrade bei der Untersuchung von neuartigen Fahrdynamikregelsystemen zur Verfügung. Gleichzeitig verhindert das Sicherheitskonzept den Totalverlust einer ganzen Achse.
+    Zwei getrennte Batteriepacks mit rund 400V erlauben die getrennte Versorgung der Aktuatorik an Vorder- und Hinterachse und tragen so im Rahmen des Sicherheitskonzeptes zu einem sicheren Betrieb als Fahrzeugversuchsträger bei. Mit dem Hochvoltnetz verknüpft sind zum einen die Absicherung des Fahrzeugs durch ein Not-Aus-System und zum anderen Vorladeschaltungen zum Hochfahren des Hochvoltnetzes beim Start des Fahrzeugs. Zusätzlich ist ein Ladesystem integriert.
+"/>
+                   </h:panelGrid>
+                </p:tab>
+                <p:tab title="MOBILE Part IV">
+                   <h:panelGrid columns="2" cellpadding="10">
+                     <p:graphicImage name="demo/images/mobile/mobile4.jpg" />
+                     <h:outputText value="Zur Visualisierung von Fähigkeiten und Eigenschaften des Versuchsfahrzeugs als Charakteristika des aktuellen Systemzustands wurde eine zentrale Informationsbasis und Fähigkeitenbasis geschaffen. Das System ermöglicht dem Nutzer eine unkomplizierte Überwachung der aktuellen Leistungsfähigkeit des Versuchsträgers. " />
+                   </h:panelGrid>
+                </p:tab>
+        </p:accordionPanel>
+               <br />
+               <p:commandButton id="back" value="Back to Loggin" action="/index.xhtml" immediate="true" />
+            
+            </h:form>
+        </h:body>
+    </f:view>
+</html>
