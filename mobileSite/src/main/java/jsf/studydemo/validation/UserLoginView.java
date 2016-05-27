@@ -53,7 +53,7 @@ public class UserLoginView {
         FacesMessage message = null;
         boolean loggedIn = false;
         
-        if(username != null && username.equals("admin") && password != null && password.equals("admin")) {
+        if(username != null && username.equals("hj") && password != null && password.equals("12345")) {
             loggedIn = true;   
             //message = new FacesMessage(FacesMessage.SEVERITY_INFO, "Welcome",username);
             myweb = "/demo1_MyGourmet_editCustomer.xhtml";
